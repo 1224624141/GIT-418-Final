@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="My Page">
+    <meta name="author" content="Kat Weaver">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icons8-butterfly-48.png">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>A Page of Favorites</title>
+    <!-- JQuery CSS-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/themes/smoothness/jquery-ui.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- JQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <a href="#main" id="skipLink">Skip to main content</a>
+    <header>
+        <a href="#" id="logo">
+            <img src="images/design-null.svg" alt="my page logo two smiling faces" width="150" height="150">
+        </a>
+        <h1>A Page of Favorites</h1>
+        <!-- Navigation -->
+        <nav>
+            <h2 id="navH2">Main Navigation</h2>
+            <ul>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#shows">Shows</a></li>
+                <li><a href="#learn">Learn</a></li>
+                <li><a href="#storage">Vote</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <!-- BIO -->
+        <section id="bio">
+            <h2>Hello World!</h2>
+            <p>My name is Kat. I'm a 28 year old from Minnesota. Currently, I am working for Starbucks as an 8 year
+                Shift Supervisor, while simultaneously attending Arizona State University Online as a full time student.
+                I plan to graduate in May of 2025 with a degree in Full-Stack Web Development.</p>
+            <p>At the beginning of each session, almost every class has a discussion for the online students to
+                introduce themselves. It's hard to find free time between work and school, and can be hard knowing what
+                to say. So I figured why not make an introductory webpage!</p>
+        </section> <!-- Closes bio -->
+        <!-- MUSIC -->
+        <section id="music">
+            <h2>Favorite Albums</h2>
+            <p id="musicP">Music is essential for me. My car doesn't start driving until I have the perfect playlist
+                going. I love finding new music from different genres and different decades. Search below for some of
+                the best albums by my favorite artists.</p>
+            <div class="tabs">
+                <h3>Popular Albums</h3>
+                <p id="search">Search by Artist</p>
+                <ul>
+                    <li><a href="#a">A</a></li>
+                    <li><a href="#b">B</a></li>
+                    <li><a href="#c">C</a></li>
+                    <li><a href="#d">D</a></li>
+                    <li><a href="#e">E</a></li>
+                    <li><a href="#f">F</a></li>
+                    <li><a href="#g">G</a></li>
+                    <li><a href="#h">H</a></li>
+                    <li><a href="#i">I</a></li>
+                    <li><a href="#j">J</a></li>
+                    <li><a href="#k">K</a></li>
+                    <li><a href="#l">L</a></li>
+                    <li><a href="#m">M</a></li>
+                    <li><a href="#n">N</a></li>
+                    <li><a href="#o">O</a></li>
+                    <li><a href="#p">P</a></li>
+                    <li><a href="#q">Q</a></li>
+                    <li><a href="#r">R</a></li>
+                    <li><a href="#s">S</a></li>
+                    <li><a href="#t">T</a></li>
+                    <li><a href="#u">U</a></li>
+                    <li><a href="#v">V</a></li>
+                    <li><a href="#w">W</a></li>
+                    <li><a href="#x">X</a></li>
+                    <li><a href="#y">Y</a></li>
+                    <li><a href="#z">Z</a></li>
+                </ul>
+                <div id="albumMenu">
+                    <section id="a">
+                        <h4>A Artists</h4>
+                        <div class="artists" id="popularA"></div>
+                    </section>
+                    <section id="b">
+                        <h4>B Artists</h4>
+                        <div class="artists" id="popularB"></div>
+                    </section>
+                    <section id="c">
+                        <h4>C Artists</h4>
+                        <div class="artists" id="popularC"></div>
+                    </section>
+                    <section id="d">
+                        <h4>D Artists</h4>
+                        <div class="artists" id="popularD"></div>
+                    </section>
+                    <section id="e">
+                        <h4>E Artists</h4>
+                        <div class="artists" id="popularE"></div>
+                    </section>
+                    <section id="f">
+                        <h4>F Artists</h4>
+                        <div class="artists" id="popularF"></div>
+                    </section>
+                    <section id="g">
+                        <h4>G Artists</h4>
+                        <div class="artists" id="popularG"></div>
+                    </section>
+                    <section id="h">
+                        <h4>H Artists</h4>
+                        <div class="artists" id="popularH"></div>
+                    </section>
+                    <section id="i">
+                        <h4>I Artists</h4>
+                        <div class="artists" id="popularI"></div>
+                    </section>
+                    <section id="j">
+                        <h4>J Artists</h4>
+                        <div class="artists" id="popularJ"></div>
+                    </section>
+                    <section id="k">
+                        <h4>K Artists</h4>
+                        <div class="artists" id="popularK"></div>
+                    </section>
+                    <section id="l">
+                        <h4>L Artists</h4>
+                        <div class="artists" id="popularL"></div>
+                    </section>
+                    <section id="m">
+                        <h4>M Artists</h4>
+                        <div class="artists" id="popularM"></div>
+                    </section>
+                    <section id="n">
+                        <h4>N Artists</h4>
+                        <div class="artists" id="popularN"></div>
+                    </section>
+                    <section id="o">
+                        <h4>O Artists</h4>
+                        <div class="artists" id="popularO"></div>
+                    </section>
+                    <section id="p">
+                        <h4>P Artists</h4>
+                        <div class="artists" id="popularP"></div>
+                    </section>
+                    <section id="q">
+                        <h4>Q Artists</h4>
+                        <div class="artists" id="popularQ"></div>
+                    </section>
+                    <section id="r">
+                        <h4>R Artists</h4>
+                        <div class="artists" id="popularR"></div>
+                    </section>
+                    <section id="s">
+                        <h4>S Artists</h4>
+                        <div class="artists" id="popularS"></div>
+                    </section>
+                    <section id="t">
+                        <h4>T Artists</h4>
+                        <div class="artists" id="popularT"></div>
+                    </section>
+                    <section id="u">
+                        <h4>U Artists</h4>
+                        <div class="artists" id="popularU"></div>
+                    </section>
+                    <section id="v">
+                        <h4>V Artists</h4>
+                        <div class="artists" id="popularV"></div>
+                    </section>
+                    <section id="w">
+                        <h4>W Artists</h4>
+                        <div class="artists" id="popularW"></div>
+                    </section>
+                    <section id="x">
+                        <h4>X Artists</h4>
+                        <div class="artists" id="popularX"></div>
+                    </section>
+                    <section id="y">
+                        <h4>Y Artists</h4>
+                        <div class="artists" id="popularY"></div>
+                    </section>
+                    <section id="z">
+                        <h4>Z Artists</h4>
+                        <div class="artists" id="popularZ"></div>
+                    </section>
+                </div> <!-- Closes album menu div -->
+            </div> <!-- Closes tabs div -->
+        </section> <!-- Closes music -->
+        <section id="books">
+            <h2>Books of 2024</h2>
+            <p>Reading a book is one of my favorite ways to pass time. I enjoy books about time travel, parallel
+                realities, space travel, history, thrillers and mysteries. Getting drawn in to a fictional new world
+                makes the stress of the world around me disappear. It's also fun to learn about topics I'm not familiar
+                with. These are my favorite reads from 2024!</p>
+            <ul>
+                <li><strong>The Gone World</strong> is a mind bending science fiction thriller blending time travel,
+                    quantum theory, and noir-style detective work. The story follows Shannon Moss, a NCIS agent
+                    investigating gruesome murders connected to deep space exploration.</li>
+                <li><strong>Recursion</strong> is a gripping science fiction thriller that dives into the nature of
+                    memory, identity, and reality. Neuroscientist Helena Smith develops a technology to preserve
+                    memories, but inadvertently spawns a phenomenon called False Memory Syndrome where people experience
+                    alternate lives.</li>
+                <li><strong>The Seven Husbands of Evelyn Hugo</strong> a captivating novel about fame, love, and
+                    identity. Reclusive Hollywood icon Evelyn Hugo chooses unknown journalist Monique Grant to write her
+                    life story, unveiling scandal and her seven marriages.</li>
+                <li><strong>Zero Days</strong> is a fast paced thriller following Jack, a penetration tester, whose life
+                    is upended when she finds her husband brutally murdered and she becomes the prime suspect.</li>
+                <li><strong>Eleanor Oliphant is Completely Fine</strong> is a heartwarming novel about loneliness,
+                    healing, and human connection. Eleanor, a socially awkard woman leading an isolated life with a
+                    traumatic past, develops an unexpected friendship with Raymond that changes her life.</li>
+            </ul>
+            <div class="carousel">
+                <div class="bookCard slider">
+                    <img src="images/goneWorld.jpg" alt="a woman in an orange spacesuit walking in a snowstorm"
+                        width="300" height="500">
+                    <dl>
+                        <dt>"The Gone World"</dt>
+                        <dd>by Tom Sweterlitsch</dd>
+                    </dl>
+                </div>
+                <div class="bookCard slider">
+                    <img src="images/recursion.jpg" alt="infinity loop on a bright yellow background" width="300"
+                        height="500">
+                    <dl>
+                        <dt>"Recursion"</dt>
+                        <dd>by Blake Crouch</dd>
+                    </dl>
+                </div>
+                <div class="bookCard slider">
+                    <img src="images/sevenHusbands.jpg" alt="a woman in an emerald green dress" width="300"
+                        height="500">
+                    <dl>
+                        <dt>"The Seven Husbands of Evelyn Hugo"</dt>
+                        <dd>by Taylor Jenkins Reid</dd>
+                    </dl>
+                </div>
+                <div class="bookCard slider">
+                    <img src="images/zeroDays.jpg" alt="title text fades into code" width="300" height="500">
+                    <dl>
+                        <dt>"Zero Days"</dt>
+                        <dd>by Ruth Ware</dd>
+                    </dl>
+                </div>
+                <div class="bookCard slider">
+                    <img src="images/eleanor.jpg" alt="a woman in an orange shirt" width="300" height="500">
+                    <dl>
+                        <dt>"Eleanor Oliphant is Completely Fine"</dt>
+                        <dd>by Gail Honeyman</dd>
+                    </dl>
+                </div>
+                <div class="carouselDots"></div>
+            </div> <!-- Closes carousel -->
+        </section> <!-- Closes books -->
+        <section id="shows">
+            <h2>Top 5 TV Shows</h2>
+            <p>These are the shows I could rewatch over and over again. Whether they get put on as background noise, or
+                actively watched. I enjoy shows that are packed with drama, have a lot of twists and turns, and are
+                layered with comedy.</p>
+            <ul>
+                <li><strong>Charmed</strong> follows The Charmed Ones, the most-powerful, good witches of all time, who
+                    use their power to protect innocent lives from demons and warlocks. Each sister possesses unique
+                    magical powers that grow and evolve, while they attempt to maintain normal lives.</li>
+                <li><strong>One Tree Hill</strong> is set in North Carolina, and initially follows the lives of two
+                    half-brothers, Lucas and Nathan Scott, who compete for positions on their school's basketball team
+                    and the drama that ensues from the brothers' respective romantic relationships.</li>
+                <li><strong>Malcolm in the Middle</strong> revolves around Malcolm, who's revealed in the first episode
+                    to be a genius with an IQ of 165, which places him in a class for gifted students. He is the
+                    third-born child in a comically dysfunctional family of four boys, of Lois and Hal.</li>
+                <li><strong>How to Get Away with Murder</strong> revolves around Annalise Keating, a defense attorney
+                    and law professor at a prestigious Philadelphia university, who, along with five of her students,
+                    becomes involved in a complex murder plot.</li>
+                <li><strong>Gossip Girl</strong> follows a group of privileged teenagers who attend a prestigious high
+                    school in the Upper East Side of New York City. Their private lives are constantly commented upon by
+                    an unknown blogger under the pseudonym "Gossip Girl".</li>
+            </ul>
+            <div class="carouselShows">
+                <div class="showCard sliderShows">
+                    <img src="images/charmed.jpg" alt="the three Haliwell sisters" width="300" height="500">
+                    <dl>
+                        <dt><span class="italic">Charmed</span></dt>
+                        <dd>1998-2006</dd>
+                    </dl>
+                </div>
+                <div class="showCard sliderShows">
+                    <img src="images/oth.jpg" alt="the original five" width="300" height="500">
+                    <dl>
+                        <dt><span class="italic">One Tree Hill</span></dt>
+                        <dd>2003-2012</dd>
+                    </dl>
+                </div>
+                <div class="showCard sliderShows">
+                    <img src="images/malcolm.jpg" alt="the family playing mini golf" width="300" height="500">
+                    <dl>
+                        <dt><span class="italic">Malcolm in the Middle</span></dt>
+                        <dd>2000-2006</dd>
+                    </dl>
+                </div>
+                <div class="showCard sliderShows">
+                    <img src="images/htgawm.jpg" alt="professor keating" width="300" height="500">
+                    <dl>
+                        <dt><span class="italic">How to Get Away with Murder</span></dt>
+                        <dd>2014-2020</dd>
+                    </dl>
+                </div>
+                <div class="showCard sliderShows">
+                    <img src="images/gossip.jpg" alt="the original 7" width="300" height="500">
+                    <dl>
+                        <dt><span class="italic">Gossip Girl</span></dt>
+                        <dd>2007-2012</dd>
+                    </dl>
+                </div>
+                <div class="carouselDotsShow"></div>
+            </div> <!-- Closes carousel -->
+        </section> <!-- Closes movies -->
+        <section id="learn">
+            <h2>Things to Learn About</h2>
+            <p id="learnP">There are so many interesting things to learn about in the world, and not enough time to
+                learn them all! There is a whole range of topics that I like to learn about, but the topics I'm most
+                interested in are listed below. I like to learn by reading books, watching videos and documentaries, or
+                by first-hand practice.</p>
+            <div id="accordion">
+                <h3>Cosmology</h3>
+                <div>
+                    <p>Stars, planets, galaxies, black holes, and the greatest mystery of all, the nature of the
+                        Universe. I was always interested in the night sky as a kid, but it wasn't until I took an
+                        Astronomy class in college that I really started to learn about space. My favorite astronomical
+                        object is Hoag's Object.</p>
+                </div>
+                <h3>Knitting</h3>
+                <div>
+                    <p>Knitting is a time consuming hobby. I learned how to knit by following along with video
+                        tutorials. I only know basic stiches right now, but one day I want to make a big blanket with a
+                        beautiful pattern on it. Or maybe even knit myself a sweater. There are so many fun colors of yarn
+                        to choose from!</p>
+                </div>
+                <h3>Cooking</h3>
+                <div>
+                    <p>My partner and I recently just bought a house. Now that we have our own kitchen, an exploration
+                        into cooking has begun. I try to follow along with recipe books or blogs, but it's fun to
+                        tweak the recipes with new flavors. My current favorite dish to make is Green Chile Chicken
+                        Enchiladas.</p>
+                </div>
+                <h3>Golf</h3>
+                <div>
+                    <p>I played golf in high school, but wasn't any good at it and didn't take it seriously. Now that
+                        I'm older and have a better appreciation for the sport, I enjoy getting out to play more. I'm
+                        learning how to have a consistent swing, proper stance and alignment, how to read the greens,
+                        and the rules of the game.</p>
+                </div>
+                <h3>Fishing</h3>
+                <div>
+                    <p>Fishing is one of the most relaxing ways to spend a day, with the peaceful outdoors and calm
+                        water. I didn't get into fishing until pretty recently, so I'm still learning about which
+                        fishing rod to use, which lures to use and which hook size, line weights, and more, all
+                        depending on which type of fish you're trying to catch.</p>
+                </div>
+                <h3>Cars</h3>
+                <div>
+                    <p>Car maintenance is the next thing I want to start learning about. So far I only know how to
+                        change my headlights, but one day I hope to know how to change a flat tire, change the oil, and
+                        replace a battery.</p>
+                </div>
+            </div> <!-- Closes accordian -->
+        </section> <!-- Closes learn -->
+        <section id="storage">
+            <div id="storageBkgd">
+                <h2>Daily Vote!</h2>
+                <p><strong>New question each day!</strong></p>
+                <fieldset>
+                    <legend>What kind of pet do you want?</legend>
+                    <input type="radio" name="pref" id="prefDog">
+                    <label for="prefDog">Dogs</label>
+                    <input type="radio" name="pref" id="prefCat">
+                    <label for="prefCat">Cats</label>
+                    <input type="radio" name="pref" id="prefFish">
+                    <label for="prefFish">Fish</label>
+                    <input type="radio" name="pref" id="prefChicken">
+                    <label for="prefChicken">Chickens</label>
+                    <input type="radio" name="pref" id="prefTurtle">
+                    <label for="prefTurtle">Turtles</label>
+                </fieldset>
+                <input type="button" value="Save" id="saveBtn">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 - Kat Weaver</p>
+    </footer>
+</body>
+
+</html>
