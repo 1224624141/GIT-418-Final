@@ -288,38 +288,23 @@ function getChoice() {
     // this updates in real time, but disappears if the page is refreshed, even though the storage isn't cleared
     if (localStorage.getItem("pref") == "dogs") {
         $("#storage").addClass("dogs");
-        $("#storage").removeClass("cats");
-        $("#storage").removeClass("fish");
-        $("#storage").removeClass("chickens");
-        $("#storage").removeClass("turtles");
+        $("#storage").removeClass("cats fish chickens turtles");
     }
     if (localStorage.getItem("pref") == "cats") {
         $("#storage").addClass("cats");
-        $("#storage").removeClass("dogs");
-        $("#storage").removeClass("fish");
-        $("#storage").removeClass("chickens");
-        $("#storage").removeClass("turtles");
+        $("#storage").removeClass("dogs fish chickens turtles");
     }
     if (localStorage.getItem("pref") == "fish") {
         $("#storage").addClass("fish");
-        $("#storage").removeClass("dogs");
-        $("#storage").removeClass("cats");
-        $("#storage").removeClass("chickens");
-        $("#storage").removeClass("turtles");
+        $("#storage").removeClass("dogs cats chickens turtles");
     }
     if (localStorage.getItem("pref") == "chickens") {
         $("#storage").addClass("chickens");
-        $("#storage").removeClass("dogs");
-        $("#storage").removeClass("fish");
-        $("#storage").removeClass("cats");
-        $("#storage").removeClass("turtles");
+        $("#storage").removeClass("dogs fish cats turtles");
     }
     if (localStorage.getItem("pref") == "turtles") {
         $("#storage").addClass("turtles");
-        $("#storage").removeClass("dogs");
-        $("#storage").removeClass("fish");
-        $("#storage").removeClass("chickens");
-        $("#storage").removeClass("cats");
+        $("#storage").removeClass("dogs fish chickens cats");
     }
 
 }
@@ -328,39 +313,23 @@ function getChoice() {
 // technically this method is working, but I would question if this is the most efficient or best way to do it?
 if (localStorage.getItem("pref") == "dogs") {
     $("#storage").addClass("dogs");
-    $("#storage").removeClass("cats");
-    $("#storage").removeClass("fish");
-    $("#storage").removeClass("chickens");
-    $("#storage").removeClass("turtles");
+    $("#storage").removeClass("cats fish chickens turtles");
 }
-
 if (localStorage.getItem("pref") == "cats") {
     $("#storage").addClass("cats");
-    $("#storage").removeClass("dogs");
-    $("#storage").removeClass("fish");
-    $("#storage").removeClass("chickens");
-    $("#storage").removeClass("turtles");
+    $("#storage").removeClass("dogs fish chickens turtles");
 }
 if (localStorage.getItem("pref") == "fish") {
     $("#storage").addClass("fish");
-    $("#storage").removeClass("dogs");
-    $("#storage").removeClass("cats");
-    $("#storage").removeClass("chickens");
-    $("#storage").removeClass("turtles");
+    $("#storage").removeClass("dogs cats chickens turtles");
 }
 if (localStorage.getItem("pref") == "chickens") {
     $("#storage").addClass("chickens");
-    $("#storage").removeClass("dogs");
-    $("#storage").removeClass("fish");
-    $("#storage").removeClass("cats");
-    $("#storage").removeClass("turtles");
+    $("#storage").removeClass("dogs fish cats turtles");
 }
 if (localStorage.getItem("pref") == "turtles") {
     $("#storage").addClass("turtles");
-    $("#storage").removeClass("dogs");
-    $("#storage").removeClass("fish");
-    $("#storage").removeClass("chickens");
-    $("#storage").removeClass("cats");
+    $("#storage").removeClass("dogs fish chickens cats");
 }
 
 document.getElementById("saveBtn").addEventListener("click", getChoice);
