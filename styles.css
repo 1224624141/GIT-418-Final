@@ -247,6 +247,7 @@ header img {
 nav a {
   text-decoration: none;
   padding: 1rem 2rem 1rem 2rem;
+  color: var(--logo);
 }
 
 nav a:visited {
@@ -264,7 +265,6 @@ nav li {
   margin: 0 1rem 0 1rem;
   text-transform: uppercase;
   font-weight: 600;
-  color: var(--logo);
   background-color: var(--gray);
   padding: 1rem 0 1rem 0;
   border-radius: 15px;
